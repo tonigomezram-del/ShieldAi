@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldAI Pro | Protección de Datos Radical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, #111111 0%, #050505 100%);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        .glass:hover {
+            border: 1px solid rgba(0, 112, 243, 0.3);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .vertex-logo {
+            width: 100px;
+            height: 100px;
+            stroke: #0070f3;
+            fill: none;
+            stroke-width: 1.2;
+            animation: float 6s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); stroke-opacity: 0.5; }
+            50% { transform: translateY(-10px) rotate(5deg); stroke-opacity: 1; }
+        }
+        .input-field {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            border-color: #0070f3;
+            outline: none;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 15px rgba(0, 112, 243, 0.1);
+        }
+        .btn-send {
+            background: #0070f3;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .btn-send:hover {
+            background: #0056b3;
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 112, 243, 0.2);
+        }
+    </style>
+</head>
+<body class="hero-gradient min-h-screen">
+
+    <nav class="flex justify-between items-center p-8 max-w-6xl mx-auto">
+        <div class="flex items-center space-x-3">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#0070f3" stroke-width="2.5">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                <path d="M2 17L12 22L22 17" />
+                <path d="M2 12L12 17L22 12" />
+            </svg>
+            <span class="text-xl font-bold tracking-tighter uppercase">ShieldAI <span class="text-blue-500">Pro</span></span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto text-center mt-16 px-6">
+        
+        <div class="flex justify-center mb-12">
+            <svg class="vertex-logo" viewBox="0 0 100 100">
+                <path d="M50 5 L95 30 L95 70 L50 95 L5 70 L5 30 Z" />
+                <path d="M50 5 L50 95" />
+                <path d="M5 30 L95 70" />
+                <path d="M95 30 L5 70" />
+            </svg>
+        </div>
+
+        <h1 class="text-6xl font-extrabold tracking-tighter mb-6 leading-[1.1]">
+            Privacidad total en la era de la IA.
+        </h1>
+        
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-12 font-light italic">
+            "Frenando la fuga de datos confidenciales antes de que crucen la frontera digital."
+        </p>
+
+        <div class="mb-24">
+            <a href="Instalador_ShieldAI_Pro.exe" download="Instalador_ShieldAI_Pro.exe" class="bg-white text-black px-12 py-5 rounded-full font-bold text-xl hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1 inline-block shadow-2xl shadow-blue-500/20">
+                Descargar v1.0 Alpha
+            </a>
+            <p class="text-[10px] text-gray-500 mt-6 uppercase tracking-[0.3em] font-bold">Build: 2026.04.Alpha | Windows x64</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 text-left mb-20">
+            <div class="glass rounded-3xl p-10 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 italic">Estado: Demo Técnica</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        ShieldAI Pro es un proyecto joven nacido esta Semana Santa. El motor de interceptación local está en fase de pruebas intensivas. 
+                    </p>
+                    <ul class="space-y-3 text-xs text-gray-300 uppercase tracking-wider">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span> 100% Procesamiento Local</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span> Cero Logs Externos</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span> Cumplimiento RGPD</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="report" class="glass rounded-3xl p-10 border-blue-500/10 shadow-xl shadow-blue-500/5">
+                <h2 class="text-2xl font-bold mb-6 italic">Reportar Problema</h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-[10px] uppercase tracking-widest font-bold text-blue-500 block mb-2">Descripción del Error</label>
+                        <textarea id="errorDesc" rows="4" class="input-field w-full rounded-2xl p-4 text-sm resize-none" placeholder="¿Qué ha fallado? ¿En qué web de IA estabas?"></textarea>
+                    </div>
+                    
+                    <button id="sendBtn" class="btn-send w-full py-4 rounded-2xl font-bold uppercase tracking-widest text-xs shadow-lg shadow-blue-500/20">
+                        Abrir Gmail y Enviar
+                    </button>
+                    
+                    <p class="text-[9px] text-gray-600 text-center leading-relaxed font-bold">
+                        Se abrirá una nueva pestaña en tu Gmail con el reporte listo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('sendBtn').addEventListener('click', function() {
+            const desc = document.getElementById('errorDesc').value;
+            const email = "tonixelyt@gmail.com";
+            const subject = "ShieldAI Pro - ERROR REPORTE ALPHA";
+            
+            if(!desc.trim()) {
+                alert("Por favor, describe el error antes de enviar.");
+                return;
+            }
+
+            const body = "SISTEMA DE REPORTE SHIELDAI PRO\n" +
+                         "==============================\n\n" +
+                         "DESCRIPCIÓN DEL ERROR:\n" + desc + 
+                         "\n\n------------------------------\n" +
+                         "Enviado desde el portal Alpha v1.0";
+
+            // URL Directa para redactar en la web de Gmail
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Abrir en pestaña nueva
+            window.open(gmailUrl, '_blank');
+        });
+    </script>
+
+</body>
+</html>
